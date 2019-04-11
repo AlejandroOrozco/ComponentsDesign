@@ -14,6 +14,11 @@
 		2FDA7543224BE3FA00E8D232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA7541224BE3FA00E8D232 /* LaunchScreen.storyboard */; };
 		2FDA754E224BE3FA00E8D232 /* ComponentsDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA754D224BE3FA00E8D232 /* ComponentsDesignTests.swift */; };
 		2FDA7559224BE3FA00E8D232 /* ComponentsDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA7558224BE3FA00E8D232 /* ComponentsDesignUITests.swift */; };
+		2FDA756A224BF67600E8D232 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA7569224BF67600E8D232 /* PrimaryButton.swift */; };
+		2FDA756E224BF7A400E8D232 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA756D224BF7A400E8D232 /* Colors.xcassets */; };
+		2FDA7570224BFA8800E8D232 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA756F224BFA8800E8D232 /* UIKitExtensions.swift */; };
+		2FDA7572224C033E00E8D232 /* MyAppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA7571224C033E00E8D232 /* MyAppTextField.swift */; };
+		2FDA7574224C035C00E8D232 /* MyAppTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA7573224C035C00E8D232 /* MyAppTextField.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		2FDA7554224BE3FA00E8D232 /* ComponentsDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentsDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDA7558224BE3FA00E8D232 /* ComponentsDesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsDesignUITests.swift; sourceTree = "<group>"; };
 		2FDA755A224BE3FA00E8D232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDA7569224BF67600E8D232 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2FDA756D224BF7A400E8D232 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2FDA756F224BFA8800E8D232 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		2FDA7571224C033E00E8D232 /* MyAppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTextField.swift; sourceTree = "<group>"; };
+		2FDA7573224C035C00E8D232 /* MyAppTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppTextField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,8 @@
 		2FDA7537224BE3F800E8D232 /* ComponentsDesign */ = {
 			isa = PBXGroup;
 			children = (
+				2FDA756B224BF6AC00E8D232 /* Extras */,
+				2FDA7566224BE40800E8D232 /* UI */,
 				2FDA7538224BE3F800E8D232 /* AppDelegate.swift */,
 				2FDA753A224BE3F800E8D232 /* ViewController.swift */,
 				2FDA753C224BE3F800E8D232 /* Main.storyboard */,
@@ -123,6 +135,49 @@
 				2FDA755A224BE3FA00E8D232 /* Info.plist */,
 			);
 			path = ComponentsDesignUITests;
+			sourceTree = "<group>";
+		};
+		2FDA7566224BE40800E8D232 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA756C224BF78D00E8D232 /* Colors */,
+				2FDA7568224BE42300E8D232 /* Components */,
+				2FDA7567224BE41400E8D232 /* Elements */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2FDA7567224BE41400E8D232 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA7569224BF67600E8D232 /* PrimaryButton.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		2FDA7568224BE42300E8D232 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA7571224C033E00E8D232 /* MyAppTextField.swift */,
+				2FDA7573224C035C00E8D232 /* MyAppTextField.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2FDA756B224BF6AC00E8D232 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA756F224BFA8800E8D232 /* UIKitExtensions.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		2FDA756C224BF78D00E8D232 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA756D224BF7A400E8D232 /* Colors.xcassets */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +248,16 @@
 				TargetAttributes = {
 					2FDA7534224BE3F800E8D232 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					2FDA7548224BE3FA00E8D232 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2FDA7534224BE3F800E8D232;
 					};
 					2FDA7553224BE3FA00E8D232 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2FDA7534224BE3F800E8D232;
 					};
 				};
@@ -230,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FDA7543224BE3FA00E8D232 /* LaunchScreen.storyboard in Resources */,
+				2FDA7574224C035C00E8D232 /* MyAppTextField.xib in Resources */,
+				2FDA756E224BF7A400E8D232 /* Colors.xcassets in Resources */,
 				2FDA7540224BE3FA00E8D232 /* Assets.xcassets in Resources */,
 				2FDA753E224BE3F800E8D232 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDA756A224BF67600E8D232 /* PrimaryButton.swift in Sources */,
 				2FDA753B224BE3F800E8D232 /* ViewController.swift in Sources */,
+				2FDA7570224BFA8800E8D232 /* UIKitExtensions.swift in Sources */,
+				2FDA7572224C033E00E8D232 /* MyAppTextField.swift in Sources */,
 				2FDA7539224BE3F800E8D232 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -476,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesignTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComponentsDesign.app/ComponentsDesign";
 			};
@@ -496,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesignTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComponentsDesign.app/ComponentsDesign";
 			};
@@ -515,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesignUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ComponentsDesign;
 			};
@@ -534,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aorozcobuiles.ComponentsDesignUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ComponentsDesign;
 			};
